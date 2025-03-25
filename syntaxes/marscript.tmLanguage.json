@@ -1,0 +1,74 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.marscript",
+	"name": "MarScript",
+	"fileTypes": [
+		"sbr",
+		"mpr",
+		"inc"
+	],
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#operators"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.marscript",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block.marscript",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.marscript",
+					"match": "\\b(?:BEGIN|END|IF|ELSE|FOR|WHILE|REPEAT|RETURN|PROC|TRY|CATCH|THEN|PROGRAM|SWITCH)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.marscript",
+					"match": "\\b(?:INT|DOUBLE|STRING)\\b"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "support.function.marscript",
+					"match": "\\b(?:ABS|FLOOR|SQRT|PRINTF|STRLEN|FOPEN|FCLOSE|GET DATE|GET TIME|EXIT)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.marscript",
+					"match": "==|!=|<=|>=|=|<|>|\\+|-|\\*|/|,|:|;"
+				}
+			]
+		}
+	}
+}

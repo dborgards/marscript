@@ -1,0 +1,25 @@
+{
+  "name": "marscript",
+  "displayName": "MarScript",
+  "description": "Highlighting Support for Mahr GmbH MarScript and MarWin",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "marscript",
+      "aliases": ["MarScript", "marscript"],
+      "extensions": [".sbr",".mpr",".inc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "marscript",
+      "scopeName": "source.marscript",
+      "path": "./syntaxes/marscript.tmLanguage.json"
+    }]
+  }
+}
