@@ -1,8 +1,13 @@
 {
   "name": "marscript",
-  "displayName": "MarScript",
-  "description": "Highlighting Support for Mahr GmbH MarScript and MarWin",
+  "displayName": "MarScript Syntax Highlighting",
+  "description": "Syntax highlighting support for MarScript / MarWin (.sbr, .mpr, .inc files)",
   "version": "0.0.1",
+  "publisher": "Dietmar Borgards",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dborgards/marscript.git"
+  },
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -10,16 +15,27 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "marscript",
-      "aliases": ["MarScript", "marscript"],
-      "extensions": [".sbr",".mpr",".inc"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "marscript",
-      "scopeName": "source.marscript",
-      "path": "./syntaxes/marscript.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "marscript",
+        "aliases": [
+          "MarScript",
+          "marscript"
+        ],
+        "extensions": [
+          ".sbr",
+          ".mpr",
+          ".inc"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "marscript",
+        "scopeName": "source.marscript",
+        "path": "./syntaxes/marscript.tmLanguage.json"
+      }
+    ]
   }
 }
