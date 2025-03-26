@@ -21,7 +21,16 @@
 			"include": "#functions"
 		},
 		{
+			"include": "#functionsWithArgs"
+		},
+		{
 			"include": "#operators"
+		},
+		{
+			"include": "#macros"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
@@ -62,11 +71,52 @@
 				}
 			]
 		},
+		"functionsWithArgs": {
+			"patterns": [
+				{
+					"name": "entity.name.function.marscript",
+					"match": "\\b(?:ACTIVATE C_AXIS|ACTIVATE JOYSTICK|ACTIVATE MODULO|ACTIVATE WATCHDOG|ADD AOI TASK|ADD ELEMENT TASK|ADD FEATURE TASK|ADD MEASUREMENT TASK|ADD PROFILE PREPROCESSING TASK|ALIGN POLAR PROFILE|APPLY TOLERANCE ELEMENT|BUILD AXIS PROFILE|BUILD CIRCLE PROFILE|BUILD COORDINATE SYSTEM|BUILD GRID|BUILD LINEAR PROFILE|BUILD LINEAR TOLERANCE ELEMENT|BUILD OVAL TOLERANCE ELEMENT|BUILD POLAR PROFILE|BUILD POLAR TOLERANCE ELEMENT|BUILD TOPOGRAPHY PROFILE|CENTER TILT WORKPIECE|CENTER WORKPIECE|CHANGE COORDINATE SYSTEM|CHANGE PROBE|COMPENSATE UNCERTAINTY|COMPENSATE UNCERTAINTY BEVEL|COMPENSATE UNCERTAINTY DIAMETER_LIB|COMPENSATE UNCERTAINTY JMR9N5|COMPENSATE UNCERTAINTY PISTON|COMPENSATE UNCERTAINTY SCREW THREAD|COMPENSATE UNCERTAINTY SURFACE_LIB|CONFIGURE QSSTAT EXPORT|CONTOUR CORRECTION|CONVERT TO DISPLAY UNIT|COPY RECORD|CREATE AOI|CREATE ASPHERE|CREATE COLUMN|CREATE COORDINATE SYSTEM|CREATE CYLINDRICAL GEAR|CREATE C_REFERENCE|CREATE ELEMENT|CREATE EMPTY PROFILE|CREATE EQUIDISTANT PROFILE|CREATE FEATURE|CREATE FEATURELIST|CREATE KEY_LIST|CREATE PARALLEL LINE|CREATE POLYLINE ELEMENT|CREATE RESULT TABLE|CREATE SAMPLING LENGTH EXTENSION|CREATE TABLE|CREATE TOPOGRAPHY|CREATE TOUCHPOINT PROFILE|CREATE TRANSFORMATION|CREATE UNWIND PROFILE|CREATE X_AXIS PROFILE|CUT PEAK VALUES|CUT RANGE LINEAR|CUT TWIST PROFILE|DATA MATRIX SCAN|DEFINE PROBE|DEFINE PROBESYSTEM|DELETE PROBE|DELETE PROBESYSTEM|DELETE RECORD PAGE|DELETE RESULTS|DETECT AREA EDGE|DETECT EDGE|DETERMINE ANGLE|DETERMINE ANGLE CONE|DETERMINE ANGULARITY AXIS AXIS|...)\\b(?=\\s*\\()"
+				}
+			]
+		},
 		"operators": {
 			"patterns": [
 				{
 					"name": "keyword.operator.marscript",
 					"match": "==|!=|<=|>=|=|<|>|\\+|-|\\*|/|,|:|;"
+				}
+			]
+		},
+		"macros": {
+			"patterns": [
+				{
+					"name": "keyword.preprocessor.marscript",
+					"match": "^\\s*#(?:define|include|ifdef|ifndef|endif|else|elif|error|scramble|endscramble)"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.marscript",
+					"begin": "\"",
+					"end": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.marscript"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.marscript"
+						}
+					},
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.marscript"
+						}
+					]
 				}
 			]
 		}
