@@ -8,6 +8,7 @@ node_modules/**
 *.vsix
 CONTRIBUTING.md
 DEVELOPMENT.md
+MARKETPLACE.md
 renovate.json
 .releaserc.json
 package-lock.json
