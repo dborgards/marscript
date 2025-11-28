@@ -33,6 +33,12 @@ jobs:
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
 
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Build VSIX package
+        run: vsce package
+
       - name: Run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
