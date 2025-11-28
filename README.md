@@ -83,7 +83,6 @@ For developers and maintainers, see [DEVELOPMENT.md](DEVELOPMENT.md) for informa
 
 See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
 
-### 0.0.1
+### 1.0.0 - Production Ready
 
-- Initial release
-- Basic syntax highlighting for MarScript
+First stable release with complete MarScript syntax highlighting support.
