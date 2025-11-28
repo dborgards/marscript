@@ -58,7 +58,7 @@
       {
         "assets": [
           {
-            "path": "*.vsix",
+            "path": "marscript.vsix",
             "label": "VSIX Package"
           }
         ]
