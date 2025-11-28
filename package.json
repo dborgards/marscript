@@ -2,7 +2,7 @@
   "name": "marscript",
   "displayName": "MarScript Syntax Highlighting",
   "description": "Syntax highlighting support for MarScript / MarWin (.sbr, .mpr, .inc files)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "dborgards",
   "license": "MIT",
   "keywords": [

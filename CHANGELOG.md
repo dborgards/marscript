@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/dborgards/marscript/compare/v1.0.0...v1.1.0) (2025-11-28)
+
+
+### Bug Fixes
+
+* update publisher name for VS Code Marketplace compatibility ([9569fb9](https://github.com/dborgards/marscript/commit/9569fb986c32444ee7088e604c32e50f05dca474))
+
+
+### Features
+
+* add automated VS Code Marketplace publishing ([0e8e570](https://github.com/dborgards/marscript/commit/0e8e570ccd6fa730cc21a127ee9d4191838f344d))
+
 # 1.0.0 (2025-11-28)
 
 
