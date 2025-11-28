@@ -143,6 +143,27 @@
 							"name": "constant.character.escape.marscript"
 						}
 					]
+				},
+				{
+					"name": "string.quoted.single.marscript",
+					"begin": "'",
+					"end": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.marscript"
+						}
+					},
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.marscript"
+						}
+					},
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.marscript"
+						}
+					]
 				}
 			]
 		},
