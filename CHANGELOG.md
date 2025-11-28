@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/dborgards/marscript/compare/v1.2.0...v1.3.0) (2025-11-28)
+
+
+### Features
+
+* Add VSIX package as release asset ([40c8419](https://github.com/dborgards/marscript/commit/40c8419e63d5330cda2c56afe5cda4d810daa382))
+
 # [1.2.0](https://github.com/dborgards/marscript/compare/v1.1.0...v1.2.0) (2025-11-28)
 
 
