@@ -24,6 +24,9 @@
 			"include": "#functionsWithArgs"
 		},
 		{
+			"include": "#numbers"
+		},
+		{
 			"include": "#operators"
 		},
 		{
@@ -79,6 +82,26 @@
 				{
 					"name": "keyword.function.marscript",
 					"match": "(?<!\\w)(?:\\t|\\s)*([a-zA-Z_]+(?:\\s+[a-zA-Z_]+)*)\\s*(?=\\()"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.hex.marscript",
+					"match": "\\b0[xX][0-9a-fA-F]+\\b"
+				},
+				{
+					"name": "constant.numeric.binary.marscript",
+					"match": "\\b0[bB][01]+\\b"
+				},
+				{
+					"name": "constant.numeric.float.marscript",
+					"match": "\\b\\d+\\.\\d+([eE][+-]?\\d+)?\\b"
+				},
+				{
+					"name": "constant.numeric.integer.marscript",
+					"match": "\\b\\d+([eE][+-]?\\d+)?\\b"
 				}
 			]
 		},
