@@ -65,10 +65,53 @@ After disabling, the "CodeQL detected code written in GitHub Actions, but not an
 
 **Why this is necessary:** GitHub's CodeQL Default setup automatically detects project languages. Since this project previously had TypeScript configuration files (now removed), CodeQL may still attempt to scan for JavaScript/TypeScript code that doesn't exist.
 
+## Development
+
+### Versioning
+
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release) for automated versioning and release management. Releases are automatically created based on commit messages following the [Conventional Commits](https://www.conventionalcommits.org/) specification.
+
+**Commit Message Format:**
+
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+**Types:**
+- `feat:` - New feature (triggers minor version bump)
+- `fix:` - Bug fix (triggers patch version bump)
+- `docs:` - Documentation changes
+- `style:` - Code style changes (formatting, etc.)
+- `refactor:` - Code refactoring
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks
+- `BREAKING CHANGE:` - Breaking changes (triggers major version bump)
+
+**Examples:**
+```bash
+feat: add support for single-quoted strings
+fix: resolve syntax highlighting issue with hex numbers
+docs(README): update installation instructions
+```
+
+### Release Process
+
+Releases are automatically created when changes are pushed to the `main` branch. The CI/CD pipeline will:
+1. Analyze commit messages
+2. Determine the next version number
+3. Update CHANGELOG.md
+4. Create a Git tag
+5. Create a GitHub release
+
 ## Feedback & Contributions
 
 - Report bugs or suggest improvements by creating an issue
 - Pull requests are welcome
+- Please follow the Conventional Commits format for commit messages
 
 ## License
 
