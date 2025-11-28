@@ -1,4 +1,13 @@
 .vscode/**
 .vscode-test/**
+.git/**
 .gitignore
-vsc-extension-quickstart.md
+.gitattributes
+.github/**
+node_modules/**
+*.vsix
+CONTRIBUTING.md
+DEVELOPMENT.md
+renovate.json
+.releaserc.json
+package-lock.json
