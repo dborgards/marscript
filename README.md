@@ -46,9 +46,24 @@ Please make sure that the following setting is set in your `.vscode/settings.jso
 This is a **pure syntax highlighting extension** with no JavaScript/TypeScript source code.
 The project contains only JSON configuration files for VS Code TextMate grammar.
 
-> **Note for maintainers:** This project does not require CodeQL JavaScript/TypeScript analysis.
-> If you see CodeQL errors about missing JS/TS code, please disable the "Default setup"
-> for CodeQL in the repository security settings (Settings → Code security and analysis → CodeQL analysis).
+### ⚙️ For Repository Maintainers: Disabling CodeQL
+
+This project does not contain JavaScript/TypeScript source code, so CodeQL analysis must be **disabled manually** in the repository settings to prevent CI/CD errors.
+
+**How to disable CodeQL Default setup:**
+
+1. Go to your repository on GitHub
+2. Click **Settings** (top right)
+3. In the left sidebar, click **Code security and analysis**
+4. Scroll down to the **Code scanning** section
+5. Find **CodeQL analysis**
+6. If "Default setup" is shown as **Enabled**, click **⋮** (three dots) next to it
+7. Select **Disable CodeQL**
+8. Confirm the action
+
+After disabling, the "CodeQL detected code written in GitHub Actions, but not any written in JavaScript/TypeScript" error will no longer occur.
+
+**Why this is necessary:** GitHub's CodeQL Default setup automatically detects project languages. Since this project previously had TypeScript configuration files (now removed), CodeQL may still attempt to scan for JavaScript/TypeScript code that doesn't exist.
 
 ## Feedback & Contributions
 
