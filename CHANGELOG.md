@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/dborgards/marscript/compare/v1.1.0...v1.2.0) (2025-11-28)
+
+
+### Features
+
+* add manual trigger option to marketplace publishing workflow ([2ea517c](https://github.com/dborgards/marscript/commit/2ea517ce54a7a3f6b290e8cbfdcc7049da693b35))
+
 # [1.1.0](https://github.com/dborgards/marscript/compare/v1.0.0...v1.1.0) (2025-11-28)
 
 
