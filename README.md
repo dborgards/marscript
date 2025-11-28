@@ -15,11 +15,20 @@ This extension provides language support for MarScript and MarWin from Mahr GmbH
 
 ## Installation
 
+### From VS Code Marketplace
+
 1. Open Visual Studio Code
-2. Open the Extensions view (Ctrl+Shift+X)
+2. Open the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`)
 3. Search for "MarScript"
 4. Click "Install"
-5. Or via console (direct install): `code --install-extension marscript-0.0.1.vsix`
+
+### Manual Installation
+
+Download the `.vsix` file from the [Releases](https://github.com/dborgards/marscript/releases) page and install it:
+
+```bash
+code --install-extension marscript-x.y.z.vsix
+```
 
 ## Supported File Types
 
@@ -27,9 +36,9 @@ This extension provides language support for MarScript and MarWin from Mahr GmbH
 - `.mpr` - MarScript program files
 - `.inc` - MarScript include files
 
-## ⚠️ Hint to encoding
+## ⚠️ Important: Character Encoding
 
-MarScript files typically use the character encoding **Windows-1252** (ISO 8859-1).  
+MarScript files typically use the character encoding **Windows-1252** (ISO 8859-1).
 Please make sure that the following setting is set in your `.vscode/settings.json`:
 
 ```json
@@ -41,77 +50,30 @@ Please make sure that the following setting is set in your `.vscode/settings.jso
 }
 ```
 
-## Project Structure
+This ensures that special characters (like umlauts: ä, ö, ü) are displayed correctly.
 
-This is a **pure syntax highlighting extension** with no JavaScript/TypeScript source code.
-The project contains only JSON configuration files for VS Code TextMate grammar.
+## Usage
 
-### ⚙️ For Repository Maintainers: Disabling CodeQL
+Once installed, the extension automatically provides syntax highlighting for all `.sbr`, `.mpr`, and `.inc` files.
 
-This project does not contain JavaScript/TypeScript source code, so CodeQL analysis must be **disabled manually** in the repository settings to prevent CI/CD errors.
+## Contributing
 
-**How to disable CodeQL Default setup:**
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
 
-1. Go to your repository on GitHub
-2. Click **Settings** (top right)
-3. In the left sidebar, click **Code security and analysis**
-4. Scroll down to the **Code scanning** section
-5. Find **CodeQL analysis**
-6. If "Default setup" is shown as **Enabled**, click **⋮** (three dots) next to it
-7. Select **Disable CodeQL**
-8. Confirm the action
-
-After disabling, the "CodeQL detected code written in GitHub Actions, but not any written in JavaScript/TypeScript" error will no longer occur.
-
-**Why this is necessary:** GitHub's CodeQL Default setup automatically detects project languages. Since this project previously had TypeScript configuration files (now removed), CodeQL may still attempt to scan for JavaScript/TypeScript code that doesn't exist.
+- Reporting bugs
+- Suggesting features
+- Submitting pull requests
+- Commit message conventions
 
 ## Development
 
-### Versioning
+For developers and maintainers, see [DEVELOPMENT.md](DEVELOPMENT.md) for information on:
 
-This project uses [semantic-release](https://github.com/semantic-release/semantic-release) for automated versioning and release management. Releases are automatically created based on commit messages following the [Conventional Commits](https://www.conventionalcommits.org/) specification.
-
-**Commit Message Format:**
-
-```
-<type>(<scope>): <subject>
-
-<body>
-
-<footer>
-```
-
-**Types:**
-- `feat:` - New feature (triggers minor version bump)
-- `fix:` - Bug fix (triggers patch version bump)
-- `docs:` - Documentation changes
-- `style:` - Code style changes (formatting, etc.)
-- `refactor:` - Code refactoring
-- `test:` - Adding or updating tests
-- `chore:` - Maintenance tasks
-- `BREAKING CHANGE:` - Breaking changes (triggers major version bump)
-
-**Examples:**
-```bash
-feat: add support for single-quoted strings
-fix: resolve syntax highlighting issue with hex numbers
-docs(README): update installation instructions
-```
-
-### Release Process
-
-Releases are automatically created when changes are pushed to the `main` branch. The CI/CD pipeline will:
-1. Analyze commit messages
-2. Determine the next version number
-3. Update CHANGELOG.md
-4. Create a Git tag
-5. Create a GitHub release
-
-## Feedback & Contributions
-
-- Report bugs or suggest improvements by creating an issue
-- Pull requests are welcome
-- Please follow the Conventional Commits format for commit messages
+- Project structure
+- Local development setup
+- Building and packaging
+- Release process
+- Repository maintenance
 
 ## License
 
@@ -119,7 +81,8 @@ Releases are automatically created when changes are pushed to the `main` branch.
 
 ## Release Notes
 
-### 0.0.1
+See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
 
-- Initial release
-- Basic syntax highlighting for MarScript
+### 1.0.0 - Production Ready
+
+First stable release with complete MarScript syntax highlighting support.

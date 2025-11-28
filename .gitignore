@@ -1,2 +1,26 @@
+# Dependencies
 node_modules
+
+# Build artifacts
 *.vsix
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode-test
+.idea
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files (if ever added)
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
