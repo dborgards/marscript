@@ -75,13 +75,26 @@ This creates a `.vsix` file that can be:
 
 ### Publishing to Marketplace
 
-Publishing is typically handled by semantic-release in CI/CD, but can be done manually:
+Publishing to the VS Code Marketplace is **fully automated** via GitHub Actions.
+
+**For setup instructions, see:** [MARKETPLACE.md](MARKETPLACE.md)
+
+The automated workflow:
+1. Triggers on every GitHub release
+2. Builds the VSIX package
+3. Publishes to VS Code Marketplace automatically
+
+**Manual publishing** (fallback):
 
 ```bash
-vsce publish
+# Login with your publisher account
+vsce login dborgards
+
+# Publish the package
+vsce publish --packagePath marscript-x.y.z.vsix
 ```
 
-**Note**: Requires a Personal Access Token (PAT) from Azure DevOps.
+**Note**: Requires a Personal Access Token (PAT) from Azure DevOps. See [MARKETPLACE.md](MARKETPLACE.md) for complete setup guide.
 
 ## Repository Maintenance
 
