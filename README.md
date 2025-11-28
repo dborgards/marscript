@@ -9,6 +9,7 @@ This extension provides language support for MarScript and MarWin from Mahr GmbH
   - Keywords (BEGIN, END, IF, ELSE, etc.)
   - Data types (INT, DOUBLE, STRING)
   - Built-in functions (ABS, FLOOR, SQRT, etc.)
+  - Numeric literals (integers, floats, hex, binary, scientific notation)
   - Comments (Single line // and Multi line /\* \*/)
   - Operators
 
@@ -39,6 +40,15 @@ Please make sure that the following setting is set in your `.vscode/settings.jso
   }
 }
 ```
+
+## Project Structure
+
+This is a **pure syntax highlighting extension** with no JavaScript/TypeScript source code.
+The project contains only JSON configuration files for VS Code TextMate grammar.
+
+> **Note for maintainers:** This project does not require CodeQL JavaScript/TypeScript analysis.
+> If you see CodeQL errors about missing JS/TS code, please disable the "Default setup"
+> for CodeQL in the repository security settings (Settings → Code security and analysis → CodeQL analysis).
 
 ## Feedback & Contributions
 
