@@ -1,0 +1,30 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # This is a pure syntax highlighting extension with only JSON configuration files.
+    # No JavaScript/TypeScript source code exists, so we skip CodeQL analysis.
+    - name: Skip CodeQL Analysis
+      run: |
+        echo "This project contains only JSON configuration files for VS Code syntax highlighting."
+        echo "No JavaScript/TypeScript source code to analyze."
+        echo "CodeQL analysis is not applicable for this project."
