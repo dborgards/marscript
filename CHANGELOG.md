@@ -1,3 +1,11 @@
+## [1.3.2](https://github.com/dborgards/marscript/compare/v1.3.1...v1.3.2) (2026-01-20)
+
+
+### Bug Fixes
+
+* Add input validation to prevent command injection in workflow_dispatch ([9ab996d](https://github.com/dborgards/marscript/commit/9ab996de27fb6f762625e8f84999b53b770933db))
+* update .github/workflows/publish-marketplace.yml ([6beb952](https://github.com/dborgards/marscript/commit/6beb952e7e24f219c54b1b2689c899c1a29e4bfd))
+
 ## [1.3.1](https://github.com/dborgards/marscript/compare/v1.3.0...v1.3.1) (2025-11-28)
 
 
