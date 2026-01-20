@@ -21,7 +21,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         run: |
           VERSION="${{ github.event.inputs.version }}"
-          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?(\+[a-zA-Z0-9.-]+)?$ ]]; then
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*)?(\+[a-zA-Z0-9]+([.-][a-zA-Z0-9]+)*)?$ ]]; then
             echo "Error: Invalid version format. Must be valid semver (e.g., 1.0.0, 1.0.0-beta.1)"
             exit 1
           fi
