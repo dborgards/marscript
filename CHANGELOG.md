@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/dborgards/marscript/compare/v1.3.2...v1.3.3) (2026-03-18)
+
+
+### Bug Fixes
+
+* **deps:** pin undici to >=6.24.0 to resolve Dependabot alerts [#29](https://github.com/dborgards/marscript/issues/29), [#30](https://github.com/dborgards/marscript/issues/30) ([b2115f0](https://github.com/dborgards/marscript/commit/b2115f0aa53a81ce601c26632b0d79fc4d75db20))
+
 ## [1.3.2](https://github.com/dborgards/marscript/compare/v1.3.1...v1.3.2) (2026-01-20)
 
 
