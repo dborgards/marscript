@@ -54,7 +54,8 @@
     ]
   },
   "overrides": {
-    "undici": ">=6.24.0"
+    "undici": "^8.10.0",
+    "npm": "git+https://github.com/npm/cli.git#4791b27f15c81d474a68daabb10b3ba6d20a0e71"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^7.0.0",
