@@ -54,8 +54,13 @@
     ]
   },
   "overrides": {
-    "undici": "^8.10.0",
-    "npm": "git+https://github.com/npm/cli.git#4791b27f15c81d474a68daabb10b3ba6d20a0e71"
+    "npm": "git+https://github.com/npm/cli.git#4791b27f15c81d474a68daabb10b3ba6d20a0e71",
+    "@actions/http-client": {
+      "undici": "^6.28.0"
+    },
+    "@semantic-release/github": {
+      "undici": "^7.29.0"
+    }
   },
   "devDependencies": {
     "@semantic-release/changelog": "^7.0.0",
