@@ -1,3 +1,14 @@
+## [1.3.4](https://github.com/dborgards/marscript/compare/v1.3.3...v1.3.4) (2026-10-14)
+
+
+### Bug Fixes
+
+* **deps:** bump handlebars to 4.7.10 ([b2deee5](https://github.com/dborgards/marscript/commit/b2deee53725250ea672ca8ae406665f4063a797a))
+* **deps:** bump js-yaml to 4.3.2 ([463bc84](https://github.com/dborgards/marscript/commit/463bc84f22d6719fe01515905306c9f8445054c4))
+* **deps:** bump undici to 6.29.0 and 7.30.0 ([263ce05](https://github.com/dborgards/marscript/commit/263ce0510b56adc75e86b7f3a5c8da6925ff4f5d))
+* **deps:** pin npm to patched bundled dependencies ([8e7424f](https://github.com/dborgards/marscript/commit/8e7424f7d0fc6a74fad3a24363edfaa3e3aaf755))
+* **deps:** refresh npm git pin integrity in the lockfile ([961e108](https://github.com/dborgards/marscript/commit/961e108c24afbeaa933ea564ae0783db3e683e72))
+
 ## [1.3.3](https://github.com/dborgards/marscript/compare/v1.3.2...v1.3.3) (2026-03-18)
 
 
