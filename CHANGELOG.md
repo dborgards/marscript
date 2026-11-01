@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/dborgards/marscript/compare/v1.3.4...v1.3.5) (2026-11-01)
+
+
+### Bug Fixes
+
+* **deps:** install npm from the registry instead of a git pin ([80edc9e](https://github.com/dborgards/marscript/commit/80edc9e221a2ccc8a8c1bbbf0b76523c3c2ec0bb))
+
 ## [1.3.4](https://github.com/dborgards/marscript/compare/v1.3.3...v1.3.4) (2026-10-14)
 
 
