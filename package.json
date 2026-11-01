@@ -54,7 +54,7 @@
     ]
   },
   "overrides": {
-    "npm": "git+https://github.com/npm/cli.git#cc3287cd70c43229ea881a2282f2479826c21280",
+    "npm": "11.21.1",
     "@actions/http-client": {
       "undici": "^8.0.0"
     },
