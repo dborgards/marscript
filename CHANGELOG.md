@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/dborgards/marscript/compare/v1.3.7...v1.3.8) (2026-11-02)
+
+
+### Bug Fixes
+
+* **deps:** drop bundled npm from release tooling ([73eea17](https://github.com/dborgards/marscript/commit/73eea17b154f1bdd4e99043a40102b485af59d87))
+
 ## [1.3.7](https://github.com/dborgards/marscript/compare/v1.3.6...v1.3.7) (2026-11-02)
 
 
