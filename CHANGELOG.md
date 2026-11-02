@@ -1,3 +1,10 @@
+## [1.3.7](https://github.com/dborgards/marscript/compare/v1.3.6...v1.3.7) (2026-11-02)
+
+
+### Bug Fixes
+
+* **renovate:** keep npm 11 constraint out of updates ([92287f6](https://github.com/dborgards/marscript/commit/92287f60450fc79a3bef8ae98a5ee66ba6466dbc))
+
 ## [1.3.6](https://github.com/dborgards/marscript/compare/v1.3.5...v1.3.6) (2026-11-02)
 
 
