@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/dborgards/marscript/compare/v1.3.5...v1.3.6) (2026-11-02)
+
+
+### Bug Fixes
+
+* **renovate:** generate lockfiles with npm 11 ([cae81c7](https://github.com/dborgards/marscript/commit/cae81c767dc35c002e7cdb1c45e569643b5d0642)), closes [npm/cli#9800](https://github.com/npm/cli/issues/9800) [#163](https://github.com/dborgards/marscript/issues/163)
+
 ## [1.3.5](https://github.com/dborgards/marscript/compare/v1.3.4...v1.3.5) (2026-11-01)
 
 
