@@ -2,20 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ],
-  "constraints": {
-    "npm": "^11"
-  },
-  "packageRules": [
-    {
-      "description": "Keep generating lockfiles with npm 11 until npm/cli#9800 is fixed",
-      "matchFileNames": [
-        "renovate.json"
-      ],
-      "matchPackageNames": [
-        "npm"
-      ],
-      "enabled": false
-    }
   ]
 }
